@@ -1,0 +1,13 @@
+version: '3.0.6'
+
+services:
+  mariadb:
+    container_name: nlw-setup-db
+    image: mariadb:10.10
+    ports:
+      - 3307:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_PASSWORD=mdb0102
+      - MYSQL_USER=user
+      - MYSQL_DATABASE=nlw_setup
